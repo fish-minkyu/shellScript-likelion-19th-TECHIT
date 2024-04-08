@@ -41,6 +41,10 @@ read -p "Enter your name(prompt)" name
 echo "Hello, $name!"
 
 
+# 변수 주변에 문자를 넣고 싶다면 ${}
+echo "${grade}th"
+
+
 # 실행 당시의 환경변수도 사용 가능하다.
 echo $HOME
 echo $PWD
@@ -78,8 +82,8 @@ echo "스크립트 인자 갯수: $#"
 echo "첫번째 인자: $1"
 echo "두번째 인자: $2"
 rmdir a
-echo "마지막 명령의 결과(Exit Code): $?"
+echo "마지막 명령의 결과(Exit Code): $?" # ?변수: 마지막에 실행된 명령어의 결과가 저장된다.
+# 0은 성공적으로 실행이 되고 끝났다란 의미다.
+# 1은 실패가 되고 실행이 끝났다란 의미다.
 
 
-# 변수 주변에 문자를 넣고 싶다면 ${}
-echo "${grade}th"
